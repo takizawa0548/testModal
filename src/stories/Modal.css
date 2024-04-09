@@ -1,0 +1,89 @@
+.modalBase{
+align-items: center;
+background: rgba(0, 0, 0, .75);
+bottom: 0;
+display: flex;
+left: 0;
+overflow-y: auto;
+padding-bottom: 20px;
+padding-top: 20px;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 999999;
+}
+
+.modalWidth{
+    width: 1200px !important;
+}
+
+.ModalOutline{
+    background-color: #fff;
+    border-radius: 32px;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 736px;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% - 40px);
+}
+
+.ModalClose{
+    position: absolute;
+    right: 0;
+    top: -17px;
+    width: 34px;
+    z-index: 2;
+    border-radius: 100px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 19px;
+}
+
+.ModalHeader{
+    align-items: center;
+    background: #e93817;
+    border-radius: 32px 32px 0 0;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1120px;
+}
+
+.ModalBody{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    text-align: left;
+}
+
+.ModalBodyTextPrimary{
+    color: #e83316 !important;
+    font-weight: 700;
+    font-size: 18px !important;
+}
+
+
+.ModalBodyZipList{
+    padding: 0;
+}
+.ModalBodyZipList>li{
+    border-bottom: 1px solid #d0d0d0;
+    margin: 0;
+    list-style: none;
+}
+
+.ModalZipLink{
+    display: block;
+    font-weight: 400;
+    padding: 8px 20px 8px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
